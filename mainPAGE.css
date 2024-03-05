@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./img/wallpaper_-_Pikatchu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 240px;
+}
+
+.PokemonBox{
+    width: 240px;
+    height: 160px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: all .2s ease-in-out; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PokemonBox:hover {
+    transform: scale(1.1); 
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 12px;
+    justify-content: space-evenly;
+    gap: 24px;
+}
+
+.smalPokemon{
+    width: 120px;
+    height: 12-0px;
+    object-fit: contain;
+    margin: 8px;
+}
+
+.NumberAndNameOfPokemon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.BtnLoadMore{
+    display: flex;
+    justify-content: center;
+}
+
+.posMusicName{
+    width: 120px;
+    margin-top: 24px;
+    margin-left: 24px;
+    font-size: x-large;
+    color: aliceblue;
+    border: 1px solid;
+    border-color: aliceblue;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.volumenImg{
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+#container2{
+    display: flex;
+    justify-content: center;
+}
+
+.loadBtn{
+    margin-bottom: 16px;
+}

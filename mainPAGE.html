@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="mainPAGE.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="mainPAGE.js" defer></script>
+    <script src="scriptInfocard.js" defer></script>
+    <script src="outsource.js" defer></script>
+    <link rel="stylesheet" href="typesBackground.css">
+    <link rel="stylesheet" href="Infocard.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+
+<body onload="loadPokemonList()" id="disableScroll">
+    <div class="posMusicName">Music
+        <img src="./img/volumenOFF.png" class="volumenImg" id="volumen" onclick="playAudio()">
+    </div>
+    <div class="searchBar">
+        <input type="text" class="form-control" style="width: 220px;" id="input" placeholder="Looking for a Pokemon?" >
+        <button class="btn btn-primary" type="submit" onclick="searchPokemon()">Search</button>
+    </div>
+    <div id="container"></div>
+    <div id="container2"></div>
+    <div class="renderThings" id="renderThings">
+        <div id="pokedex" class="d-none">
+            <h1 id="pokemonName" class="d-none"></h1>
+            <div id="pokemonImgBig" class="d-none"></div>
+            <img src="./img/pokeball-1594373_1280.png" id="pokeballImg" class="pokeballImg d-none">
+            <button type="button" class="btn btn-outline-light position" onclick="closeInfoPokemon()">Back</button>
+        </div>
+        <div id="statsInfo" class="d-none"></div>
+    </div>
+    <div class="BtnLoadMore">
+        <button id="loadMore" class="btn btn-primary loadBtn" type="submit" onclick="loadMorePokemon()">Load more</button>
+        <button id="seeAll" class="btn btn-primary d-none loadBtn" type="submit" onclick="loadPokemonList()">See All</button>    
+    </div>   
+
+</body>
+</html>
